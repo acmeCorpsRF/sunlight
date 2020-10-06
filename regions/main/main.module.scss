@@ -1,0 +1,63 @@
+.main {
+  width: 100%;
+
+  .performance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(270deg, #1A78C2 0%, #1A78C2 101.06%);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+    @media (min-width: 641px) {
+      margin-bottom: 24px;
+      padding: 24px 25px 24px 29px;
+    }
+
+    @media (max-width: 640px) {
+      margin-bottom: 10px;
+      padding: 15px 10px 16px 10px;
+    }
+
+    .edit {
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+      color: white;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+
+      .word {
+        @media (max-width: 640px) {
+          display: none;
+        }
+      }
+
+      .icon {
+        @media (min-width: 641px) {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+
+  .personality {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .editing {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+    @media (min-width: 641px) {
+      padding: 25px 0 43px;
+    }
+
+    @media (max-width: 640px) {
+      padding: 27px 22px 17px;
+    }
+  }
+}

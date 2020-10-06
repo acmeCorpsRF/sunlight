@@ -1,0 +1,117 @@
+.info {
+  display: flex;
+  align-items: center;
+  font: {
+    size: 14px;
+  }
+
+  @media (min-width: 641px) {
+    margin-right: 26px;
+  }
+
+  .alerts {
+    position: relative;
+    padding-top: 3px;
+
+    @media (min-width: 641px) {
+      margin-right: 20px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      border-right: 1px solid #ffffff;
+
+      @media (min-width: 641px) {
+        top: 1px;
+        right: -20px;
+        bottom: 2px;
+      }
+
+      @media (max-width: 640px) {
+        top: 3px;
+        right: -10px;
+        bottom: 5px;
+      }
+    }
+  }
+
+  .bell {
+    fill: white;
+
+    @media (min-width: 641px) {
+      font: {
+        size: 35px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      font: {
+        size: 25px;
+      }
+    }
+  }
+}
+
+.self {
+  display: flex;
+  align-items: center;
+  font: {
+    size: 14px;
+  }
+
+  .avatar {
+
+    &_header {
+      @media (min-width: 641px) {
+        margin-left: 19px;
+        margin-right: 20px;
+      }
+
+      @media (max-width: 640px) {
+        width: 24px;
+        height: 24px;
+        margin-left: 19px;
+      }
+    }
+
+    &_main {
+      @media (min-width: 641px) {
+        margin-right: 44px;
+      }
+
+      @media (max-width: 640px) {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .name {
+    font: {
+      weight: 600;
+    }
+    color: white;
+
+    &_header {
+      @media (max-width: 640px) {
+        display: none;
+      }
+    }
+
+    &_main {
+      @media (min-width: 641px) {
+        font: {
+          size: 30px;
+        }
+      }
+
+      @media (max-width: 640px) {
+        font: {
+          size: 14px;
+        }
+      }
+    }
+  }
+}

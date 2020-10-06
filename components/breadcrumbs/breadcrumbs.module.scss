@@ -1,0 +1,64 @@
+.breadcrumbs {
+
+  @media (min-width: 641px) {
+    margin-bottom: 33px;
+  }
+
+  @media (max-width: 640px) {
+    margin-bottom: 9px;
+  }
+
+  .title {
+    font: {
+      weight: 600;
+    }
+    color: white;
+    text-transform: uppercase;
+
+    @media (min-width: 641px) {
+      font: {
+        size: 18px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      font: {
+        size: 14px;
+      }
+    }
+  }
+
+  .list {
+    font: {
+      weight: 600;
+    }
+    color: white;
+    letter-spacing: -0.4px;
+
+    @media (min-width: 641px) {
+      margin-top: 11px;
+      font: {
+        size: 14px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      margin-top: 8px;
+      font: {
+        size: 12px;
+      }
+    }
+  }
+
+  .item {
+    font: {
+      weight: inherit;
+      size: inherit;
+    }
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

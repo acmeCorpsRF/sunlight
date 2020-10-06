@@ -1,0 +1,17 @@
+.header {
+
+  .block {
+    display: flex;
+    justify-content: flex-end;
+
+    @media (min-width: 641px) {
+      padding-top: 20px;
+      padding-bottom: 14px;
+    }
+
+    @media (max-width: 640px) {
+      padding-top: 14px;
+      padding-bottom: 11px;
+    }
+  }
+}
